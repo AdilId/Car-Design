@@ -1,0 +1,419 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+.container {
+  background-color: indianred;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .shadow {
+  width: 349px;
+  height: 59px;
+  position: absolute;
+  background-color: black;
+  bottom: 50%;
+  left: 50%;
+  border-radius: 30px;
+  transform: rotateX(108deg) translate(-50%, -1000%);
+}
+.container .car {
+  width: 500px;
+  height: 400px;
+  position: relative;
+}
+.container .car .white-circle {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background-color: #fcfcfc52;
+  left: 50%;
+  top: -49px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  border: 40px solid #ffffff1a;
+  outline: 40px solid #ffffff1f;
+}
+.container .car .view-one {
+  width: 90px;
+  height: 68px;
+  background-color: transparent;
+  position: absolute;
+  left: 153px;
+  top: 130px;
+  transform: skew(-20deg, 0deg);
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+  box-shadow: 4px 4px 0px inset, 43px 2px inset #ffffff54, 80px 2px #ffffff54;
+  z-index: 1;
+}
+.container .car .view-two {
+  width: 85px;
+  height: 70px;
+  background-color: transparent;
+  position: absolute;
+  right: 153px;
+  top: 133px;
+  transform: skew(20deg, 0deg);
+  border-top: 4px solid black;
+  border-right: 4px solid black;
+  box-shadow: 3px -3px 0px white;
+}
+.container .car .view-one::before {
+  content: "";
+  width: 100%;
+  height: 103%;
+  left: -10px;
+  top: -8px;
+  background-color: transparent;
+  position: absolute;
+  border-top: 6px solid black;
+  border-left: 6px solid black;
+  border-radius: 10px 0 0 0;
+}
+.container .car .view-two::before {
+  content: "";
+  width: 108%;
+  height: 103%;
+  right: -14px;
+  top: -12px;
+  background-color: transparent;
+  position: absolute;
+  border-top: 6px solid black;
+  border-right: 6px solid black;
+  border-radius: 0 10px 0 0;
+}
+.container .car .lamp {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  background-color: white;
+  top: 193px;
+  right: 100px;
+  border-radius: 50%;
+  border: 4px solid black;
+}
+.container .car .body-of-car {
+  width: 310px;
+  height: 120px;
+  background-color: #e82123;
+  border-radius: 60px 60px 70px 70px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  border-left: 4px solid white;
+  outline: black 4px solid;
+  z-index: 1;
+  box-shadow: 0px -6px inset #0000008f, 0px 8px black;
+}
+.container .car .body-of-car .shadow-1 {
+  position: absolute;
+  width: 293px;
+  height: 15px;
+  background-color: #00000029;
+  top: 66px;
+  left: 5px;
+  border-radius: 15px;
+}
+.container .car .body-of-car .cerve {
+  width: 200px;
+  height: 40px;
+  background-color: #ffffff38;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0 0 30px 30px;
+  border-bottom: 2px solid white;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  box-shadow: 0px -5px inset #e82123;
+}
+.container .car .body-of-car .cerve::before {
+  content: "";
+  width: 100%;
+  height: 8px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #e82123;
+  border-radius: 0 0 70px 70px;
+}
+.container .car .body-of-car .circle-one {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  left: 15px;
+  top: 15px;
+  border-radius: 50%;
+  border: 6px solid black;
+  box-shadow: 0px 5px 0px #80808082 inset, 0px 2px 4px 0px black;
+  position: absolute;
+}
+.container .car .body-of-car .circle-one::before {
+  content: "";
+  position: absolute;
+  left: -9px;
+  top: -5px;
+  width: 40px;
+  height: 42px;
+  border: 3px solid black;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: 1s start-up infinite linear alternate;
+  z-index: 1;
+}
+.container .car .body-of-car .circle-two {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  right: 15px;
+  top: 15px;
+  border-radius: 50%;
+  border: 6px solid black;
+  box-shadow: 0px 5px 0px #80808082 inset, 0px 2px 4px 0px black;
+  position: absolute;
+}
+.container .car .body-of-car .circle-two::before {
+  content: "";
+  position: absolute;
+  left: -9px;
+  top: -5px;
+  width: 40px;
+  height: 42px;
+  border: 3px solid black;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: 1s start-up infinite linear alternate;
+  z-index: 1;
+}
+.container .car .body-of-car .fly-one {
+  width: 115px;
+  height: 30px;
+  background-color: #292929;
+  position: absolute;
+  right: 12px;
+  top: 72px;
+  border-radius: 50px 3px;
+  border: 8px solid white;
+  outline: 3px solid black;
+  overflow: hidden;
+  box-shadow: 4px 5px 2px inset black;
+}
+.container .car .body-of-car .fly-one::before {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 0;
+  width: 40px;
+  height: 14px;
+  background-color: #ed8302;
+  border-radius: 50px 3px;
+  box-shadow: -10px 5px 0px 0px inset #00000063;
+}
+.container .car .body-of-car .fly-two {
+  width: 115px;
+  height: 30px;
+  background-color: #292929;
+  position: absolute;
+  left: 8px;
+  top: 72px;
+  border-radius: 3px 50px;
+  border: 8px solid white;
+  outline: 3px solid black;
+  overflow: hidden;
+  box-shadow: -4px 5px 2px inset black;
+}
+.container .car .body-of-car .fly-two::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 0;
+  width: 40px;
+  height: 14px;
+  background-color: #ed8302;
+  border-radius: 3px 50px;
+  box-shadow: 10px 5px 0px 0px inset #00000063;
+}
+.container .car .body-of-car .logo {
+  position: absolute;
+  top: 72px;
+  left: 50%;
+  width: 31px;
+  transform: translateX(-55%);
+  height: 42px;
+  border-radius: 12px 12px 30px 30px;
+  background-color: white;
+  border: 4px solid white;
+  box-shadow: 0px 0px 3px 2px;
+}
+.container .car .body-of-car .logo .one {
+  width: 25px;
+  height: 7px;
+  background-color: black;
+  position: absolute;
+  left: 50%;
+  top: -1px;
+  transform: translateX(-50%);
+  border-radius: 4px 4px 1px 1px;
+}
+.container .car .body-of-car .logo .one::before {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 7px;
+  background-color: white;
+  left: 50%;
+  top: -7px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  border: 3px solid black;
+}
+.container .car .body-of-car .logo .two {
+  width: 25px;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  left: 50%;
+  top: 8px;
+  transform: translateX(-50%);
+  border-radius: 4px;
+}
+.container .car .body-of-car .logo .three {
+  width: 23px;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  left: 50%;
+  top: 15px;
+  transform: translateX(-50%);
+  border-radius: 4px;
+}
+.container .car .body-of-car .logo .four {
+  width: 20px;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  left: 50%;
+  top: 22px;
+  transform: translateX(-50%);
+  border-radius: 4px;
+}
+.container .car .body-of-car .logo .five {
+  width: 13px;
+  height: 7px;
+  background-color: black;
+  position: absolute;
+  left: 50%;
+  top: 29px;
+  transform: translateX(-50%);
+  border-radius: 1px 1px 35px 35px;
+}
+.container .car .wheel-one {
+  position: absolute;
+  width: 50px;
+  height: 116px;
+  background-color: #2a2828;
+  left: 97px;
+  bottom: 40px;
+  border-radius: 0 0 15px 15px;
+  border: 4px solid black;
+  box-shadow: 0px -5px inset #ffffff70;
+}
+.container .car .wheel-two {
+  position: absolute;
+  width: 50px;
+  height: 116px;
+  background-color: #2a2828;
+  right: 97px;
+  bottom: 40px;
+  border-radius: 0 0 15px 15px;
+  border: 4px solid black;
+  box-shadow: 0px -5px inset #ffffff70;
+}
+.container .car .motor {
+  width: 199px;
+  height: 11px;
+  background-color: #000000eb;
+  position: absolute;
+  bottom: 68px;
+  left: 150px;
+  border-radius: 0 0 10px 10px;
+}
+.container .car .volon {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border: 4px solid black;
+  border-radius: 50%;
+  right: 168px;
+  top: 175px;
+}
+.container .car .first-chair {
+  width: 70px;
+  height: 20px;
+  background-color: black;
+  position: absolute;
+  right: 160px;
+  top: 189px;
+  border-radius: 5px;
+}
+.container .car .second-chair {
+  width: 70px;
+  height: 20px;
+  background-color: black;
+  position: absolute;
+  left: 160px;
+  top: 189px;
+  border-radius: 5px;
+}
+.container .car .mirror {
+  width: 32px;
+  height: 10px;
+  background-color: black;
+  border-radius: 5px 5px 1px 1px;
+  position: absolute;
+  left: 50%;
+  top: 145px;
+  transform: translateX(-50%);
+}
+.container .car .mirror::before {
+  content: "";
+  width: 4px;
+  height: 20px;
+  background-color: black;
+  position: absolute;
+  left: 50%;
+  top: -10px;
+  transform: translateX(-50%);
+}
+.container .car .inter {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: white;
+  left: 115px;
+  top: 202px;
+}
+.container .car .inter::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 148px;
+  background-color: white;
+  left: 21px;
+  top: -145px;
+  transform: rotateZ(15deg);
+}
+@keyframes start-up {
+  to {
+    box-shadow: 0px 0px 0px 20px yellow;
+  }
+}
